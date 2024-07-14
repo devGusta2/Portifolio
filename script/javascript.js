@@ -28,114 +28,114 @@ function widhtScreen(){
 }
 
 //Funcionamento do mostrador dos anos
-year=2022;
-document.getElementById('yearValue').innerHTML=year;
+// year=2022;
+// document.getElementById('yearValue').innerHTML=year;
 //0%
 //100%
 //195%
 
-function verifyChange(){
-    const elemento =document.querySelector('.titleInfo').innerHTML="";
-    if(year==2019){
-        console.log(year)
-        const elemento=document.querySelector('.titleInfo');
-        var textAdigitar="Curso em Desenvolvimento de Jogos e Curso Básico em POO";
-        const interval=20;
-        function typeText(elemento , textAdigitar, interval){   
-            const char= textAdigitar.split("").reverse();
-            const typer=setInterval(() => {
-                    if(!char.length){
-                        return clearInterval(typer);
-                    }
-                    const next= char.pop();
-                    elemento.innerHTML+=next;
-            }, interval);
-        }
-        typeText(elemento , textAdigitar, interval);
-    }else if(year==2022){
-        console.log(year)
-        const elemento=document.querySelector('.titleInfo');
-        var textAdigitar="Curso em Desenvolvimento de Sistemas";
-        const interval=20;
-        function typeText(elemento , textAdigitar, interval){   
-            const char= textAdigitar.split("").reverse();
-            const typer=setInterval(() => {
-                    if(!char.length){
-                        return clearInterval(typer);
-                    }
-                    const next= char.pop();
-                    elemento.innerHTML+=next;
-            }, interval);
-        }
-        typeText(elemento , textAdigitar, interval);
-    }else if(year==2023){
-        const elemento=document.querySelector('.titleInfo');
-        var textAdigitar="Curso em Análise e Desenvolvimento de Sistemas";
-        const interval=20;
-        function typeText(elemento , textAdigitar, interval){   
-            const char= textAdigitar.split("").reverse();
-            const typer=setInterval(() => {
-                    if(!char.length){
-                        return clearInterval(typer);
-                    }
-                    const next= char.pop();
-                    elemento.innerHTML+=next;
-            }, interval);
-        }
-        typeText(elemento , textAdigitar, interval);
-    }
-}
+// function verifyChange(){
+//     const elemento =document.querySelector('.titleInfo').innerHTML="";
+//     if(year==2019){
+//         console.log(year)
+//         const elemento=document.querySelector('.titleInfo');
+//         var textAdigitar="Curso em Desenvolvimento de Jogos e Curso Básico em POO";
+//         const interval=20;
+//         function typeText(elemento , textAdigitar, interval){   
+//             const char= textAdigitar.split("").reverse();
+//             const typer=setInterval(() => {
+//                     if(!char.length){
+//                         return clearInterval(typer);
+//                     }
+//                     const next= char.pop();
+//                     elemento.innerHTML+=next;
+//             }, interval);
+//         }
+//         typeText(elemento , textAdigitar, interval);
+//     }else if(year==2022){
+//         console.log(year)
+//         const elemento=document.querySelector('.titleInfo');
+//         var textAdigitar="Curso em Desenvolvimento de Sistemas";
+//         const interval=20;
+//         function typeText(elemento , textAdigitar, interval){   
+//             const char= textAdigitar.split("").reverse();
+//             const typer=setInterval(() => {
+//                     if(!char.length){
+//                         return clearInterval(typer);
+//                     }
+//                     const next= char.pop();
+//                     elemento.innerHTML+=next;
+//             }, interval);
+//         }
+//         typeText(elemento , textAdigitar, interval);
+//     }else if(year==2023){
+//         const elemento=document.querySelector('.titleInfo');
+//         var textAdigitar="Curso em Análise e Desenvolvimento de Sistemas";
+//         const interval=20;
+//         function typeText(elemento , textAdigitar, interval){   
+//             const char= textAdigitar.split("").reverse();
+//             const typer=setInterval(() => {
+//                     if(!char.length){
+//                         return clearInterval(typer);
+//                     }
+//                     const next= char.pop();
+//                     elemento.innerHTML+=next;
+//             }, interval);
+//         }
+//         typeText(elemento , textAdigitar, interval);
+//     }
+// }
 
-setInterval(()=>{
-    if (year==2019){
-        document.getElementById('line1').style.width='0%';
-        document.getElementById('line2').style.width='0%';
-        //bolinhas
-        document.getElementById('ball1').style.opacity='1';
-        document.getElementById('ball2').style.opacity='0';
-        document.getElementById('ball3').style.opacity='0';
-        //titulos
-        document.getElementById('y2').style.opacity='0';
-        document.getElementById('y3').style.opacity='0';
-        //conjutos
-        document.getElementById('cntj1').style.marginLeft='0%';
-        //text
-        // document.querySelector('.titleInfo').innerHTML='<p><h2>Curso básico de POO <br><br> Criação de jogos 2D</h2></p><br><br>';
-        //document.querySelector('subInfo').innerHtml= document.querySelector('.subInfo').innerHTML="<h4>Plataforma: </h4><span>Fundação Bradesco</span>";
-   }else if(year==2022){
+// setInterval(()=>{
+//     if (year==2019){
+//         document.getElementById('line1').style.width='0%';
+//         document.getElementById('line2').style.width='0%';
+//         //bolinhas
+//         document.getElementById('ball1').style.opacity='1';
+//         document.getElementById('ball2').style.opacity='0';
+//         document.getElementById('ball3').style.opacity='0';
+//         //titulos
+//         document.getElementById('y2').style.opacity='0';
+//         document.getElementById('y3').style.opacity='0';
+//         //conjutos
+//         document.getElementById('cntj1').style.marginLeft='0%';
+//         //text
+//         // document.querySelector('.titleInfo').innerHTML='<p><h2>Curso básico de POO <br><br> Criação de jogos 2D</h2></p><br><br>';
+//         //document.querySelector('subInfo').innerHtml= document.querySelector('.subInfo').innerHTML="<h4>Plataforma: </h4><span>Fundação Bradesco</span>";
+//    }else if(year==2022){
 
-        document.getElementById('line1').style.width='100%';
-        document.getElementById('line2').style.width='0%';
-        //bolinhas
-        document.getElementById('ball2').style.opacity='1';
-        document.getElementById('ball1').style.opacity='1';
-        document.getElementById('ball3').style.opacity='0';
-        //titulos
-        document.getElementById('y2').style.opacity='1';
-        document.getElementById('y3').style.opacity='0';
-        //conjunto
-        document.getElementById('cntj1').style.marginLeft='-100%';
-        //text  
+//         document.getElementById('line1').style.width='100%';
+//         document.getElementById('line2').style.width='0%';
+//         //bolinhas
+//         document.getElementById('ball2').style.opacity='1';
+//         document.getElementById('ball1').style.opacity='1';
+//         document.getElementById('ball3').style.opacity='0';
+//         //titulos
+//         document.getElementById('y2').style.opacity='1';
+//         document.getElementById('y3').style.opacity='0';
+//         //conjunto
+//         document.getElementById('cntj1').style.marginLeft='-100%';
+//         //text  
 
-        //digitação
+//         //digitação
          
-        //document.querySelector('.titleInfo').innerHTML="<h2>Curso em Desenvolvimento<br> de Sistemas</h2>";
-       // document.querySelector('subInfo').innerHtml= document.querySelector('.subInfo').innerHTML="<h4>Local:</h4>";
-   }else if(year==2023){
-        document.getElementById('line1').style.width='100%';
-        document.getElementById('line2').style.width='100%';
-        //bolinhas
-        document.getElementById('ball2').style.opacity='1';
-        document.getElementById('ball3').style.opacity='1';
-        //titulos
-        document.getElementById('y2').style.opacity='1';
-        document.getElementById('y3').style.opacity='1';
-        document.getElementById('cntj1').style.marginLeft='-195%';
+//         //document.querySelector('.titleInfo').innerHTML="<h2>Curso em Desenvolvimento<br> de Sistemas</h2>";
+//        // document.querySelector('subInfo').innerHtml= document.querySelector('.subInfo').innerHTML="<h4>Local:</h4>";
+//    }else if(year==2023){
+//         document.getElementById('line1').style.width='100%';
+//         document.getElementById('line2').style.width='100%';
+//         //bolinhas
+//         document.getElementById('ball2').style.opacity='1';
+//         document.getElementById('ball3').style.opacity='1';
+//         //titulos
+//         document.getElementById('y2').style.opacity='1';
+//         document.getElementById('y3').style.opacity='1';
+//         document.getElementById('cntj1').style.marginLeft='-195%';
 
-        //document.querySelector('.titleInfo').innerHTML="<h2>Curso em Desenvolvimento<br> de Sistemas</h2>";
-        //document.querySelector('.subInfo').innerHTML="<h4>Local:</h4><span>Fatec Ferraz de Vasconcelos</span><br><h4>Início:</h4><span>08/2023</span><br><h4>Conclusão:</h4><span>12/2026</span>";
-   }
-}, 100);
+//         //document.querySelector('.titleInfo').innerHTML="<h2>Curso em Desenvolvimento<br> de Sistemas</h2>";
+//         //document.querySelector('.subInfo').innerHTML="<h4>Local:</h4><span>Fatec Ferraz de Vasconcelos</span><br><h4>Início:</h4><span>08/2023</span><br><h4>Conclusão:</h4><span>12/2026</span>";
+//    }
+// }, 100);
 
 
 function rightArrow(){
@@ -189,3 +189,25 @@ let info=[
 
 
 
+function indicaProgresso() {
+    const scroll =document.documentElement.scrollTop;
+    var altura = document.documentElement.scrollHeight-
+    document.documentElement.clientHeight;
+
+    
+    document.getElementById('line1').style.backgroundColor="green";
+    var rolagem=(scroll/altura)*100;
+    if(  rolagem>60){
+       
+    }
+}
+
+window.onscroll=function(){
+    indicaProgresso();
+}
+
+
+function onscroll(){
+    console.log("Oi");
+}
+window.addEventListener('scroll', onScroll);
