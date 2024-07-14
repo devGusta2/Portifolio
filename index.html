@@ -1,0 +1,312 @@
+<!-- NOTAS:
+
+Colocar o modal dos cards de projeto no modo responsivo
+
+Colocar todos os links que faltam
+
+Colocar área de contato
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styleResponsivo.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/respAbout.css">
+    <!-- <link rel="stylesheet" href="./styles/style-projetos.css"> -->
+    <link rel="stylesheet" href="./styles/style-projetos.css">
+    <link rel="stylesheet" href="./styles/style-responsivo-prjt.css">
+    <link rel="stylesheet" href="./styles/styles-skills.css">
+
+    <title>Portifólio</title>
+</head>
+        <script>
+                i=0 ;
+            idioma=[
+            ['Projetos','Projects'],
+            ['Habilidades','Skills'],
+            ['Contato','Contact'],
+            ['ainda nao','still nothing'],
+            ['Olá, me chamo Gustavo.','Hello there, my name is Gustavo'],
+            ['Quem sou','About me'],
+            ];
+        </script>
+
+    <body>
+        <div class="container-all">
+            <header class="header" id="header">
+                <button class="btnIconHeader" onclick="ativaMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                </button>
+                <div class="logoHeader">
+                    <img src="" alt="Logo-devGusta">
+                </div>
+                <div class="navBar" id="navBar">
+                
+                        <button class="btnIconHeader" onclick="ativaMenu()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                        </button>
+                    <a href="#section1"><script>document.write(idioma[0][i])</script></a>
+                    <a href="#section2"><script>document.write(idioma[1][i])</script></a>
+                    <a href="#section3"><script>document.write(idioma[2][i])</script></a>
+                    
+                </div>
+            </header>
+
+            <div class="content">
+                <section class="inicioSection">
+                    <div class="containerInicio">
+                       <div class="rowInicio">
+                            <div class="boxSaud">
+                                <h1 id="titleHome">Full Stack<br>Developer</h1>
+                                <p id="saudacoes"><script>document.write(idioma[4][i])</script></p>
+                                <a href="#section3">
+                                    <button type="button"id="buttonInicio">
+                                        <p id="titleButton"><script>document.write(idioma[5][i])</script></p>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="boxSocial">
+                                <div class="cardSocial">
+                                    <a href="https://www.linkedin.com/in/gustavo-rodrigues-de-souza-80a064252/" target="_blank"><i class="fa-brands fa-linkedin fa-4x" id="iconLinkedin"></i></a>
+                                </div>
+                                <div class="cardSocial">
+                                    <a href="https://github.com/devGusta2" target="_blank"><i class="fa-brands fa-square-github fa-4x" id="iconGit"></i></a>
+                                </div>
+                                    
+                                <div class="cardSocial">
+                                    <a href="" target="_blank"><i class="fa-brands fa-square-instagram fa-4x" id="iconInsta"></i></a>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </section>
+                <!-- Hard Skills -->
+                <!-- <div class="titles">
+                    <h1>Hard skills</h1>
+               </div> -->
+                <section class="tecnologias">
+               
+                    <div class="boxTec">
+                        <i id="iconTechReact"class="fa-brands fa-react  fa-4x"></i>
+                        <i id="iconTechHtml"class="fa-brands fa-html5 fa-4x"></i>
+                        <i id="iconTechCss"class="fa-brands fa-css3-alt fa-4x"></i>
+                        <i id="iconTechJs"class="fa-brands fa-square-js fa-4x"></i>
+                        <i id="iconTechPhp"class="fa-brands fa-php fa-4x"></i>
+                        <!-- <i id="iconTechJava"class="fa-brands fa-java fa-4x"></i> -->
+                    </div>
+                </section>
+               
+
+                <!-- <section class="skill-content">
+                    
+                    <div class="column-skill">
+                        <div class="card-icon-skill">
+                            <i class="fa-solid fa-code fa-5x "></i>
+                        </div>
+                        <div class="card-icon-skill">
+                            <i class="fa-regular fa-lightbulb fa-5x"></i>
+                        </div>
+                    </div>
+                    <div class="column-skill">
+                        <div class="card-desc">
+                            <h2>Desenvolvimento de sistemas</h2>
+                            <br>
+                            <p>Capaz de utilizar uma variedade de tecnologias modernas, como HTML, CSS, JavaScript 
+                                e frameworks populares, para criar experiências online envolventes e funcionais. 
+                                Seu comprometimento com a excelência técnica e sua capacidade de resolver desafios 
+                                complexos fazem dele(a) um recurso valioso em qualquer equipe de desenvolvimento.</p>
+                        </div>
+                        <div class="card-desc">
+                            <h2>Soft Skills</h2>
+                            <br>
+                            <p>Facilidade para expressar ideias de forma clara. 
+                                 disposição para ouvir as perspectivas dos outros e 
+                                colaborar em equipe, usa uma boa abordagem para resolver problemas
+                                 e alcançar objetivos comuns.é um facilitador de discussões produtivas</p>
+                        </div>
+                        <div class="card-desc">
+                            <h2>Resolução criativa de problemas</h2>
+                            <br>
+                            <p>Aborda os desafios com uma mentalidade proativa, identificando oportunidades de melhoria 
+                                e implementando estratégias pragmáticas para superar obstáculos. 
+                                Seu histórico de encontrar soluções originais e eficientes demonstra 
+                                sua aptidão para enfrentar desafios complexos com confiança e determinação.</p>
+                        </div>
+                    </div>
+                    <div class="column-skill">
+                            <div class="card-icon-skill">
+                                <i class="fa-solid fa-users fa-5x"></i>
+                            </div>
+                    </div>
+                </section> -->
+            
+                <!-- Secção dos projetos -->
+               
+                <div class="titles">
+                    <h1>Soft skills</h1>
+               </div>
+               <section class="skills">
+                    <div class="col-skills"></div>
+                    <div class="col-skills">
+                        <div class="card-skill">
+                            <i class="fa-solid fa-code fa-5x "></i>
+                        </div>
+                        <div class="card-skill">
+                            <i class="fa-regular fa-lightbulb fa-5x"></i>
+                        </div>
+                    </div>
+                    <div class="col-skills">
+                        <div class="card-desc">
+                            <h2>Desenvolvimento de sistemas</h2>
+                            <br>
+                            <p>Capaz de utilizar uma variedade de tecnologias modernas, como HTML, CSS, JavaScript 
+                                e frameworks populares, para criar experiências online envolventes e funcionais. 
+                                Seu comprometimento com a excelência técnica e sua capacidade de resolver desafios 
+                                complexos fazem dele(a) um recurso valioso em qualquer equipe de desenvolvimento.</p>
+                        </div>
+                        <div class="card-desc">
+                            <h2>Soft Skills</h2>
+                            <br>
+                            <p>Facilidade para expressar ideias de forma clara. 
+                                 disposição para ouvir as perspectivas dos outros e 
+                                colaborar em equipe, usa uma boa abordagem para resolver problemas
+                                 e alcançar objetivos comuns.é um facilitador de discussões produtivas</p>
+                        </div>
+
+                        <div class="card-desc">
+                            <h2>Resolução criativa de problemas</h2>
+                            <br>
+                            <p>Aborda os desafios com uma mentalidade proativa, identificando oportunidades de melhoria 
+                                e implementando estratégias pragmáticas para superar obstáculos. 
+                                Seu histórico de encontrar soluções originais e eficientes demonstra 
+                                sua aptidão para enfrentar desafios complexos com confiança e determinação.</p>
+                        </div>
+                    </div>
+                    <div class="col-skills">
+                        <div class="card-skill">
+                            <i class="fa-solid fa-users fa-5x"></i>
+                        </div>
+                    </div>
+               </section>
+
+
+   
+                  
+               <div class="titles">
+                    <h1>Projetos</h1>
+               </div>
+                <!-- Projects Section -->
+                    <section class="projects-section">
+                        <div class="col-cards">
+                            <div class="lball"></div>
+                            <div class="line"></div>
+                            <div class="lball"></div>
+                            <div class="line"></div>
+                            <div class="lball"></div>
+                        </div>
+                        <div class="col-cards">
+                           <div class="mini-card">
+                                <h3>Curso Básico em POO e Criação de Jogos digitais</h3>
+                                <div class="sub-info">
+                                    <h5>Plataforma:</h5>
+                                    <p>Fundação Bradesco</p>
+                                </div>
+                           </div>
+                           <div class="mini-card">
+                                <h3>Curso em Desenvolvimento de Sistemas</h3>
+                                <div class="sub-info">
+                                    <h5>Local:</h5>
+                                    <p>Etec de Guaianases</p>
+                                </div>
+                                <div class="sub-info">
+                                    <h5>Início:</h5>
+                                    <p>08/2022</p>
+                                </div>
+                                <div class="sub-info">
+                                    <h5>Término:</h5>
+                                    <p>12/2023</p>
+                                </div>
+                           </div>
+                           <div class="mini-card">
+                                <h3>Curso em Análise e Desenvolvimento de Sistemas</h3>
+                                <div class="sub-info">
+                                    <h3>Local:</h5>
+                                    <p>Fatec Ferraz de Vasconcelos</p>
+                                </div>
+                                <div class="sub-info">
+                                    <h5>Início:</h5>
+                                    <p>08/2023</p>
+                                </div>
+                                <div class="sub-info">
+                                    <h5>Término:</h5>
+                                    <p>12/2026</p>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="col-cards">
+                            <div class="big-card"></div>
+                            <div class="big-card"></div>
+                            <div class="big-card"></div>
+                            <div class="big-card"></div>
+                            <div class="big-card"></div>
+                        </div>
+                    </section>
+
+
+
+
+
+            <div class="titles">
+                <h1>Quem sou</h1>
+            </div>
+            <!-- About section  -->
+                <section class="about" id="section3">
+                    
+                    <!-- Column about -->
+                    <div class="columnAbout">
+                        <div class="titleAbout">
+                            <h1>Gustavo Rodrigues</h1>
+                        </div>
+                        <!-- description about me -->
+                        <div class="textBox">
+                            <span>
+                                Olá, tenho 19 anos sou um apaixonado iniciante desenvolvedor web full stack, com uma formação em Desenvolvimento de Sistemas
+                                
+                                Meu objetivo é aprender e crescer na área. Curso <b>Análise e Desenvolvimento de Sistemas</b>
+                                na Fatec. Principais tecnologias: <b>React Native, PHP, JavaScript.</b>
+                            </span>
+                        </div>
+                        <!-- icones  -->
+                        <div class="iconsBox">
+                            <div class="imgTittle">
+                                <a href="./media/CurriculoWord.pdf" target="_blank"><img id="icon-paper" src="./img/paper-icon.png" alt="icon-paper"></a>
+                                <a href="./media/CurriculoWord.pdf" target="_blank"><h3>Currículo</h3></a>
+                            </div>
+                            <div class="imgTittle">
+                                <img id="icon-video" src="./img/video-icon.png" alt="icon-video">
+                                <a href="" target="_blank"><h3>Vídeo</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnAbout">
+                        <div class="imgBox">
+                            <img src="./img/me.png" alt="icon-user">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script src="./script/javascript.js"></script>
+        <script src="https://kit.fontawesome.com/787aeba2d2.js" crossorigin="anonymous"></script>
+    </body>
+
+</html>

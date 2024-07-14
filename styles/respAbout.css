@@ -1,0 +1,4 @@
+@media screen and (max-width:768px){.about{display:flex;flex-direction:column}
+.imgBox img{
+    height:250px
+}#icon-paper{height:40px;width:30px}#icon-video{height:40px;width:40px}}

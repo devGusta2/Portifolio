@@ -1,0 +1,76 @@
+
+:root{
+    --blue1:#27374D;
+    --blue2:#526D82;
+}
+
+/* display flex */
+
+.projects-section, .col-cards{
+    display: flex;
+}
+
+
+.projects-section{
+    height: 250vh;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: red;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.col-cards{
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.col-cards:nth-child(1){
+    width: 5%;
+    background-color: blue;
+    justify-content: space-evenly;
+}
+.col-cards:nth-child(2){
+    width: 30%;
+    background-color: blueviolet;
+}
+.col-cards:nth-child(3){
+    width: 65%;
+    background-color: yellow;
+}
+.mini-card{
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    color: black;
+    line-height: 25px;
+    box-shadow: 1px 1px 10px rgb(136, 136, 136);
+}
+.big-card{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgb(136, 136, 136);
+}
+
+/* linhas e bolunhas */
+
+.lball{
+    height: 30px;
+    width: 30px;
+    background-color: var(--blue1);
+    border-radius: 100%;
+}
+.line{
+    height: 48%;
+    width: 12px;
+    background-color: var(--blue1);
+}
