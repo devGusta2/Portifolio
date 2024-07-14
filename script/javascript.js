@@ -189,25 +189,36 @@ let info=[
 
 
 
-function indicaProgresso() {
-    const scroll =document.documentElement.scrollTop;
-    var altura = document.documentElement.scrollHeight-
-    document.documentElement.clientHeight;
+// function indicaProgresso() {
+//     const scroll =document.documentElement.scrollTop;
+//     var altura = document.documentElement.scrollHeight-
+//     document.documentElement.clientHeight;
+
+ 
+
+//     var rolagem=(scroll/altura)*100;
+//     var idLine=1;
+//     if(rolagem>55){
+//        document.getElementById('line'+idLine).style.height="48%";
+//        if(rolagem>65){
+//             idLine+=1;
+//             document.getElementById('line'+idLine).style.height="48%"
+//        }else{
+        
+//             document.getElementById('line'+idLine).style.height="0%"
+//             idLine-=1;
+//        }
+//     }else{
+//         document.getElementById('line'+idLine).style.height="0%";
+//     }
 
     
-    document.getElementById('line1').style.backgroundColor="green";
-    var rolagem=(scroll/altura)*100;
-    if(  rolagem>60){
-       
-    }
-}
+    
+// }
 
-window.onscroll=function(){
-    indicaProgresso();
-}
+// window.onscroll=function(){
+//     indicaProgresso();
+// };
 
 
-function onscroll(){
-    console.log("Oi");
-}
-window.addEventListener('scroll', onScroll);
+

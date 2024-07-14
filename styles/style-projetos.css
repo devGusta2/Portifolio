@@ -82,5 +82,7 @@
     height: 48%;
     width: 12px;
     background-color: var(--blue1);
+    transition: 1s;
+
 }
 
