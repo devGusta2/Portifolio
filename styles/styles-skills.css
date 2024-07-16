@@ -9,7 +9,9 @@
     display: flex;
 
 }
-
+#card-especial{
+    display: none;
+}
 .skills{
     flex-direction: row;
     height: 170vh;
