@@ -5,13 +5,14 @@
     --text-button:#fff;
     --card-button:#27374D;
     --card-hover:#657E91;
-    --time-line:#78B6FF
+    --time-line:#69b4e2;
+    
 }
 
 :root{
     --blue1:#27374D;
     --blue2:#526D82;
-    --card: whitesmoke;
+    --card: rgb(253, 253, 253);
 }
 
 /* display flex */
@@ -58,22 +59,26 @@
     height: 250px;
     width: 250px;
     border-radius: 10px;
-    background-color: var(--card);
+
     padding: 10px;
     box-sizing: border-box;
     color: black;
     line-height: 25px;
-    box-shadow: 2px 2px 10px rgb(136, 136, 136);
+    background-color: white;
+    /* border: 1px solid var(--time-line); */
+    box-shadow: 1px 1px 7px rgb(136, 136, 136);
 }
 .big-card{
     height: 250px;
     width: 100%;
     border-radius: 10px;
-    background-color: var(--card);
-    box-shadow: 2px 2px 10px rgb(136, 136, 136);
+    background-color: white;
+    box-shadow: 1px 1px 7px rgb(136, 136, 136);
     display: flex;
     flex-direction: row;
-}
+    /* border: 1px solid var(--time-line); */
+    background-color: white;
+} 
 
 /* linhas e bolunhas */
 .ballsAndLines{
@@ -89,7 +94,7 @@
 .lball{
     height: 30px;
     width: 30px;
-    background-color: var(--blue1);
+    background-color: var(--time-line);
     border-radius: 100%;
     transition: 0.5s;
     opacity: 1;
@@ -99,7 +104,7 @@
 .line{
     height: 48%;
     width: 12px;
-    background-color: var(--blue1);
+    background-color: var(--time-line);
     transition: 1s;
    
     
@@ -131,10 +136,10 @@
     overflow: auto;
 }
 .info-project h3{
-   align-items: left;
+
    
    width: 100%;
-   text-align: left;
+   text-align: center;
 }
 .info::-webkit-scrollbar {
     width: 5px;
