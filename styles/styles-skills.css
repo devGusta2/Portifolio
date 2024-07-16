@@ -83,4 +83,6 @@
     color: black;
     flex-direction: column;
     justify-content: center;
+    line-height: 25px;
+    
 }
