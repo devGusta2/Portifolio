@@ -208,9 +208,9 @@ function indicaP(){
     var rolagem=(scroll/altura)*100;
 
     document.getElementById('ball1').style.opacity="1";
-    console.log(rolagem);
 
-    if(rolagem > 60){
+
+    if(rolagem > 50){
             document.getElementById('line1').style.height="48%";
             document.getElementById('ball2').style.opacity="1";
         if (rolagem > 70){
