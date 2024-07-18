@@ -98,6 +98,7 @@
     border-radius: 100%;
     transition: 0.5s;
     opacity: 1;
+    position: relative;
     transition-delay: 0.5s;
 }
 
@@ -106,7 +107,7 @@
     width: 12px;
     background-color: var(--time-line);
     transition: 1s;
-   
+    position: relative;
     
 }
 
