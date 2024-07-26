@@ -17,11 +17,11 @@
         display: none;
     }
     .col-skills:nth-child(1){
-        background-color: green;
+  
         display: none;
     }
     .col-skills:nth-child(3){
-        background-color: red;
+      
         width: 50%;
     }
     .col-skills:nth-child(2){
