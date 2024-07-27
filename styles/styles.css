@@ -55,3 +55,8 @@ body{
     background-color: var(--white2);
     color: black;
 }
+
+.logoHeader img{
+    height: 70px;
+    width: 110px;
+}
