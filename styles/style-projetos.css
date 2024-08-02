@@ -120,13 +120,22 @@
     width: 50%;
     /* background-color: red; */
     box-sizing: border-box;
+ 
 }
 .img-box img{
     height: 250px;
+    transition: 0.5s;
+
 }
 .img-box img:nth-child(2){
     height: 100px;
 }
+
+.img-box img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
 
 
 /* informaçoes dos projetos */
