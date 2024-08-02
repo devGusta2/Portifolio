@@ -201,36 +201,36 @@ let info=[
 
 
 
-function indicaP(){
-    const scroll =document.documentElement.scrollTop;
-    var altura = document.documentElement.scrollHeight-
-    document.documentElement.clientHeight;
-    var rolagem=(scroll/altura)*100;
+// function indicaP(){
+//     const scroll =document.documentElement.scrollTop;
+//     var altura = document.documentElement.scrollHeight-
+//     document.documentElement.clientHeight;
+//     var rolagem=(scroll/altura)*100;
 
-    document.getElementById('ball1').style.opacity="1";
+//     document.getElementById('ball1').style.opacity="1";
 
 
-    if(rolagem > 50){
-            document.getElementById('line1').style.height="48%";
-            document.getElementById('ball2').style.opacity="1";
-        if (rolagem > 70){
-            document.getElementById('line2').style.height="48%";
-            document.getElementById('ball3').style.opacity="1";
-        }else{
-            document.getElementById('line2').style.height="0%";
-            document.getElementById('ball3').style.opacity="0";
-            document.getElementById('ball2').style.transitionDelay="0";
-        }
-    }else{
-        document.getElementById('line1').style.height="0%";
-        document.getElementById('ball2').style.opacity="0";
+//     if(rolagem > 50){
+//             document.getElementById('line1').style.height="48%";
+//             document.getElementById('ball2').style.opacity="1";
+//         if (rolagem > 70){
+//             document.getElementById('line2').style.height="48%";
+//             document.getElementById('ball3').style.opacity="1";
+//         }else{
+//             document.getElementById('line2').style.height="0%";
+//             document.getElementById('ball3').style.opacity="0";
+//             document.getElementById('ball2').style.transitionDelay="0";
+//         }
+//     }else{
+//         document.getElementById('line1').style.height="0%";
+//         document.getElementById('ball2').style.opacity="0";
     
-    }
-};
+//     }
+// };
 
-window.onscroll= function(){
-    indicaP();
-};
+// window.onscroll= function(){
+//     indicaP();
+// };
 
 
 

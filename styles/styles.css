@@ -60,3 +60,21 @@ body{
     height: 70px;
     width: 110px;
 }
+
+select {
+    height: 2em;
+    width:60px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+
+    font-weight: bold;
+}
+
+select option{
+    color: black;
+
+}
+
+
