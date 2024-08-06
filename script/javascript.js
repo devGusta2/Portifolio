@@ -270,3 +270,12 @@ let info=[
 
 
 
+
+function exbModal(){
+    window.alert(document.querySelector('.info').innerText);
+    
+
+}
+
+
+
