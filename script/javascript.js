@@ -271,7 +271,10 @@ let info=[
 
 
 
-function exbModal(){
+function exbModal(e){
+
+    elemnt = document.querySelector('.info'+e);
+
     window.alert(document.querySelector('.info').innerText);
     
 
