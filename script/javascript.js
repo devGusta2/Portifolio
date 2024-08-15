@@ -273,9 +273,9 @@ let info=[
 
 function exbModal(e){
 
-    elemnt = document.querySelector('.info'+e);
+    const elemnt = document.querySelector('#info'+e);
 
-    window.alert(document.querySelector('.info').innerText);
+    window.alert(elemnt.innerText);
     
 
 }

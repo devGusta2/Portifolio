@@ -88,5 +88,9 @@
         align-items: center;
         width: 50%;
     }
+
+    .info-button{
+        display: block;
+    }
     
 }

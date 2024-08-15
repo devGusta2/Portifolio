@@ -181,6 +181,19 @@
     display:none
 }
 .button-box .info-button{
-      background-color:var(--card-button);width:5%;height:10px;border-radius: 10px;text-align:center;text-decoration:none;color:var(--text-button);padding:15px;display:flex;flex-direction:row;align-items:center;gap:15px;transition:.5s;
+      background-color:var(--card-button);
+      width:5%;
+      height:10px;
+      border-radius: 10px;
+      text-align:center;
+      text-decoration:none;
+      color:var(--text-button);
+      padding:15px;
+      display:flex;
+      flex-direction:row;
+      align-items:center;
+      gap:15px;
+      transition:.5s;
       justify-content: center;
+    display: none;
 }
