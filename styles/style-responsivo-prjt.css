@@ -89,8 +89,14 @@
         width: 50%;
     }
 
-    .info-button{
-        display: block;
+    .button-box  .info-button{
+  
+      display: block;
+
     }
     
+    .button-box  .info-button i{
+  
+        margin:auto;
+      }
 }
