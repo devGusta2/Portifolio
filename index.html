@@ -1,416 +1,407 @@
-
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1C2EPPLNK"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-D1C2EPPLNK');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width='device-width', initial-scale=1.0">
-
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/about.css">
-    <link rel="stylesheet" href="./styles/respAbout.css">
-    <link rel="stylesheet" href="./styles/style-projetos.css">
-    <link rel="stylesheet" href="./styles/styles-skills.css">
-    <!-- Responsivo -->
-    <link rel="stylesheet" href="./styles/style-skills-responsivo.css">
-    <link rel="stylesheet" href="./styles/style-responsivo-prjt.css">
-    <link rel="stylesheet" href="./styles/styleResponsivo.css">
-
-
-    <link rel="icon" href="./img/fav-icon.png" type="image/png">
-    <title>DevGusta</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Gustavo Rodrigues de Souza, Desenvolvedor Backend Java com experiência em Spring Boot, APIs REST, segurança, SQL e CI/CD.">
+  <meta name="keywords" content="Gustavo Rodrigues de Souza, backend Java, Spring Boot, APIs REST, MySQL, PostgreSQL, Spring Security, portfólio">
+  <meta name="author" content="Gustavo Rodrigues de Souza">
+  <meta name="theme-color" content="#27374D">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gustavo Rodrigues de Souza | Desenvolvedor Backend Java">
+  <meta property="og:description" content="Portfólio profissional com foco em Java, Spring Boot, APIs REST, SQL, testes automatizados e CI/CD.">
+  <meta property="og:image" content="./img/Logo-devGusta.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gustavo Rodrigues de Souza | Desenvolvedor Backend Java">
+  <meta name="twitter:description" content="Portfólio profissional com foco em Java, Spring Boot, APIs REST, SQL, testes automatizados e CI/CD.">
+  <meta name="twitter:image" content="./img/Logo-devGusta.png">
+  <link rel="icon" href="./img/fav-icon.png" type="image/png">
+  <link rel="preload" href="./img/eu2026.png" as="image">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Gustavo Rodrigues de Souza | Desenvolvedor Backend Java</title>
 </head>
-     <!-- Google tag (gtag.js) -->
-   
-        <script>
-                i=0 ;
-            idioma=[
-            ['Projetos','Projects'],
-            ['Habilidades','Skills'],
-            ['Sobre mim','Contact'],
-            ['ainda nao','still nothing'],
-            ['Olá, me chamo Gustavo.','Hello there, my name is Gustavo'],
-            ['Quem sou','About me'],
-            ];
-        </script>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-        <div class="modal">
-            <dialog>
-                <p></p>
-            </dialog>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <img src="./img/Logo-devGusta.png" alt="Logo DevGusta" width="120" height="72">
+      </a>
+
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Alternar tema">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+          <span class="button-label">Tema</span>
+        </button>
+
+        <button class="icon-button menu-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          <span class="button-label">Menu</span>
+        </button>
+      </div>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#stack">Stack</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Backend Java • Spring Boot • APIs REST • SQL</p>
+          <h1>Gustavo Rodrigues de Souza</h1>
+          <p class="hero-lead">
+            Desenvolvedor Backend Java com atuação no desenvolvimento de aplicações para a Prefeitura Municipal de Ferraz de Vasconcelos.
+            Construo soluções seguras, escaláveis e fáceis de manter, com foco em qualidade de código e boa experiência para o usuário.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn-secondary" href="./media/Curriculo_Gustavo_Defintiv.pdf" target="_blank" rel="noreferrer">Baixar currículo</a>
+          </div>
+
+          <ul class="hero-highlights" aria-label="Destaques profissionais">
+            <li>
+              <strong>Java 17+</strong>
+              <span>Backend principal</span>
+            </li>
+            <li>
+              <strong>Spring Security</strong>
+              <span>Autenticação e autorização</span>
+            </li>
+            <li>
+              <strong>GitHub Actions</strong>
+              <span>Entrega contínua</span>
+            </li>
+          </ul>
         </div>
-        <div class="container-all">
-            <header class="header" id="header">
-                <button class="btnIconHeader" onclick="ativaMenu()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                      </svg>
-                </button>
-                <div class="logoHeader">
-                    <img src="./img/Logo-devGusta.png" alt="Logo-devGusta">
-                </div>
-                <div class="navBar" id="navBar">
-                
-                        <button class="btnIconHeader" onclick="ativaMenu()">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                              </svg>
-                        </button>
-                        <a href="#section1"><script>document.write(idioma[1][i])</script></a>
-                    <a href="#section2"><script>document.write(idioma[0][i])</script></a>
-                    
-                    <a href="#section3"><script>document.write(idioma[2][i])</script></a>
-              
-                </div>
-            </header>
-       
 
-            <main class="content">
+        <aside class="hero-panel reveal" aria-label="Resumo rápido">
+          <div class="glass-card profile-summary">
+            <p class="panel-label">Resumo atual</p>
+            <h2>Backend para sistemas corporativos</h2>
+            <p>
+              Foco em APIs REST, JWT, JPA/Hibernate, MySQL, PostgreSQL, testes automatizados com JUnit 5 e Mockito,
+              além de desenvolvimento Full Stack quando necessário.
+            </p>
 
+            <div class="summary-grid">
+              <article>
+                <span class="summary-value">06+</span>
+                <span class="summary-label">áreas de stack</span>
+              </article>
+              <article>
+                <span class="summary-value">REST</span>
+                <span class="summary-label">arquitetura principal</span>
+              </article>
+              <article>
+                <span class="summary-value">CI/CD</span>
+                <span class="summary-label">automação de entrega</span>
+              </article>
+              <article>
+                <span class="summary-value">SQL</span>
+                <span class="summary-label">modelagem relacional</span>
+              </article>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-                <section class="inicioSection">
-                    <div class="containerInicio">
-                       <div class="rowInicio">
-                            <div class="boxSaud">
-                                <h1 id="titleHome">React<br>Developer</h1>
-                                <p id="saudacoes"><script>document.write(idioma[4][i])</script></p>
-                                <a href="#section3">
-                                    <button type="button"id="buttonInicio">
-                                        <p id="titleButton"><script>document.write(idioma[5][i])</script></p>
-                                    </button>
-                                </a>
-                            </div>
-                            <div class="boxSocial">
-                                <div class="cardSocial">
-                                    <a href="https://www.linkedin.com/in/gustavo-rodrigues-de-souza-80a064252/" target="_blank"><i class="fa-brands fa-linkedin fa-4x" id="iconLinkedin"></i></a>
-                                </div>
-                                <div class="cardSocial">
-                                    <a href="https://github.com/devGusta2" target="_blank"><i class="fa-brands fa-square-github fa-4x" id="iconGit"></i></a>
-                                </div>
-                                    
-                                <div class="cardSocial">
-                                    <a href="" target="_blank"><i class="fa-brands fa-square-instagram fa-4x" id="iconInsta"></i></a>
-                                </div>
-                            </div>
-                       </div>
-                    </div>
-                </section>
-              
-               
-                <section class="tecnologias">
-               
-                    <div class="boxTec">
-                        <i id="iconTechReact"class="fa-brands fa-react  fa-4x"></i>
-                        <i id="iconTechHtml"class="fa-brands fa-html5 fa-4x"></i>
-                        <i id="iconTechCss"class="fa-brands fa-css3-alt fa-4x"></i>
-                        <i id="iconTechJs"class="fa-brands fa-square-js fa-4x"></i>
-                        <i id="iconTechPhp"class="fa-brands fa-php fa-4x"></i>
-                   
-                    </div>
-                </section>
-               
-
-            
-               
-            
-               <section class="skills" id="section1">
-                    <div class="col-skills"></div>
-                    <div class="col-skills">
-                        <div class="card-skill">
-                            <i class="fa-solid fa-code fa-5x "></i>
-                        </div>
-                        <div class="card-skill" id="card-especial">
-                            <i class="fa-solid fa-users fa-5x"></i>
-                        </div>
-                        <div class="card-skill">
-                            <i class="fa-regular fa-lightbulb fa-5x"></i>
-                        </div>
-                    </div>
-                    <div class="col-skills">
-                        <div class="card-desc">
-                            <h2>Desenvolvimento de sistemas</h2>
-                            <br>
-                            <p>Capaz de utilizar uma variedade de tecnologias, como <strong>HTML 5, CSS 3, JavaScript, php e python</strong>
-                                e frameworks populares como <strong>Reac.js</strong> e <strong>React-native</strong>, para criar projetos criativos, eficientes e otimizados.
-                                Comprometido em adaptar e melhorar a sua capacidade de resolver desafios.
-                              </p>
-                        </div>
-                        <div class="card-desc">
-                            <h2>Comunicação</h2>
-                            <br>
-                            <p>Facilidade para expressar ideias de forma clara. 
-                                 disposição para ouvir as perspectivas dos outros e 
-                                colaborar em equipe, usa uma boa abordagem para resolver problemas
-                                 e alcançar objetivos comuns.é um facilitador de discussões produtivas</p>
-                        </div>
-
-                        <div class="card-desc">
-                            <h2>Resolução criativa de problemas</h2>
-                            <br>
-                            <p>Aborda os desafios com uma mentalidade proativa, identificando oportunidades de melhoria 
-                                e implementando estratégias para superar obstáculos. 
-                                Interesse em aprender novas formas de resolver problemas com agilidade e eficiência.</p>
-                        </div>
-                    </div>
-                    <div class="col-skills">
-                        <div class="card-skill" id="card-especial2">
-                            <i class="fa-solid fa-users fa-5x"></i>
-                        </div>
-                    </div>
-               </section>
-
-
-   
-            
-                    <section class="projects-section" id="section2">
-                        <div class="col-cards">
-                          
-                            <div class="ballsAndLines">
-                                <div class="lball" id="ball1"></div>
-                                <div class="line" id="line1"></div>
-                                <div class="lball" id="ball2"></div>
-                                <div class="line" id="line2"></div>
-                                <div class="lball" id="ball3"></div>
-                            </div>
-                        </div>
-                        <div class="col-cards">
-                          
-                           <div class="mini-card">
-                                <h3>Curso Básico em POO e Criação de Jogos digitais</h3>
-                                <div class="sub-info">
-                                    <h5>Plataforma:</h5>
-                                    <p>Fundação Bradesco</p>
-                                </div>
-                           </div>
-                           <div class="mini-card">
-                                <h3>Curso em Desenvolvimento de Sistemas</h3>
-                                <div class="sub-info">
-                                    <h5>Local:</h5>
-                                    <p>Etec de Guaianases</p>
-                                </div>
-                                <div class="sub-info">
-                                    <h5>Início:</h5>
-                                    <p>08/2022</p>
-                                </div>
-                                <div class="sub-info">
-                                    <h5>Término:</h5>
-                                    <p>12/2023</p>
-                                </div>
-                           </div>
-                           <div class="mini-card">
-                                <h3>Curso em Análise e Desenvolvimento de Sistemas</h3>
-                                <div class="sub-info">
-                                    <h3>Local:</h5>
-                                    <p>Fatec Ferraz de Vasconcelos</p>
-                                </div>
-                                <div class="sub-info">
-                                    <h5>Início:</h5>
-                                    <p>08/2023</p>
-                                </div>
-                                <div class="sub-info">
-                                    <h5>Término:</h5>
-                                    <p>12/2026</p>
-                                </div>
-                           </div>
-                        </div>
-                        <div class="col-cards">
-                            <div class="big-card">
-                                <div class="img-box">
-                                    <img src="./img/Mentec.png" alt="Mentec">
-                                </div>
-                                <div class="info-project">
-                                    <h3>Mentec</h3>
-                                    <div class="info" id="info4">
-                                        <p>Projeto apresentado na feira de tecnologia do CPS (Feteps) Site de mentorias da FATEC Ferraz que conecta alunos a tutores especializados, oferecendo suporte personalizado nas disciplinas da grade curricular, onde estou participando como back-end e front-end feito com: <b>React js</b></p>
-                                    </div>
-                                    <div class="button-box">
-                                        <a href="https://github.com/devGusta2/Mentec" target="_blank">
-                                            <i class="fa-brands fa-github fa-2x"></i>
-                                            <h5>Github</h5>
-                                        </a>
-                                        <a href="https://mentec-devgusta2s-projects.vercel.app/" target="_blank" style="display: block; display: flex; ">
-                                            <i class="fa-solid fa-up-right-from-square fa-2x"></i>
-                                            <h5>Acessar</h5>
-                                        </a>
-                                        <div class="info-button"href="" target="_blank" onclick="exbModal(4)">
-                                            <i class="fa-solid fa-circle-info fa-2x"></i>
-                                  
-                                        </div> 
-                                    </div>
-                                </div>
-                               
-                            </div>
-                            <div class="big-card">
-                                <div class="img-box">
-                                    <img src="./img/biblioNotebook.png" alt="BiblioTroca">
-                                </div>
-                                <div class="info-project">
-                                    <h3>BiblioTroca</h3>
-                                    <div class="info" id="info1">
-                                        <p>Trabalho de Conclusão de Curso da Etec de Guaianases feita com
-                                            <b>Html, Css, JavaScript, Php, Jquery</b>.
-                                            Uma rede social para leitores, com sistemas de trocas 
-                                        de livros e chat.  </p>
-                                    </div>
-                                    <div class="button-box">
-                                        <a href="https://github.com/devGusta2/BiblioTroca" target="_blank">
-                                            <i class="fa-brands fa-github fa-2x"></i>
-                                            <h5>Github</h5>
-                                        </a>
-                                        <a href="" target="_blank">
-                                            <i class="fa-solid fa-up-right-from-square fa-2x"></i>
-                                            <h5>Acessar</h5>
-                                        </a>
-                                        <div class="info-button"href="" target="_blank" onclick="exbModal(1)">
-                                            <i class="fa-solid fa-circle-info fa-2x"></i>
-                                         
-                                        </div> 
-                                    </div>
-                                </div>
-                              
-                             
-                            </div>
-                            <div class="big-card">
-                                <div class="img-box">
-                                   <img src="./img/0km.png" alt="Billing-app"  >
-                               </div>
-                            
-                               <div class="info-project">
-                                   <h3>Tabela ACSL</h3>
-                                   <div class="info" id="info5">
-                                       Plataforma especializada em análise de dados do mercado automotivo. 
-                                       Participei como front-end, criando requisições via axios em uma API em Python, projeto feito com:
-                                           <b>React.js</b>.
-                                        
-                                   </div>
-                                   <div class="button-box">
-                                       <a href="https://github.com/devGusta2/Billing-App" target="_blank">
-                                           <i class="fa-brands fa-github fa-2x"></i>
-                                           <h5>Github</h5>
-                                       </a>
-                                       <a href="https://tabela-acsl.vercel.app" target="_blank" style="display: block; display: flex; ">
-                                           <i class="fa-solid fa-up-right-from-square fa-2x"></i>
-                                           <h5>Acessar</h5>
-                                       </a>
-                                        <div class="info-button"href="" target="_blank" onclick="exbModal(5)">
-                                           <i class="fa-solid fa-circle-info fa-2x"></i>
-                                 
-                                       </div> 
-                                   </div>
-                               </div>
-                              
-                           </div>
-                            
-                            <div class="big-card">
-                                <div class="img-box">
-                                    <img src="./img/zookids.png" alt="zookids" >
-                                </div>
-                                <div class="info-project">
-                                    <h3>ZooKids</h3>
-                                    <div class="info" id="info2">
-                                        <p>Aplicativo de Zoológico onde os usuários podem navegar por
-                                            espécies, visualizar fotos e
-                                            descrições informativas feito com:
-                                            <b>React Native, JavaScript, Php</b>.
-                                            </p>
-                                    </div>
-                                    <div class="button-box">
-                                        <a href="https://github.com/devGusta2/ZooKids" target="_blank">
-                                            <i class="fa-brands fa-github fa-2x"></i>
-                                            <h5>Github</h5>
-                                        </a>
-                                        <a href="" target="_blank">
-                                            <i class="fa-solid fa-up-right-from-square fa-2x"></i>
-                                            <h5>Acessar</h5>
-                                        </a>
-                                        <div class="info-button"href="" target="_blank" onclick="exbModal(2)">
-                                            <i class="fa-solid fa-circle-info fa-2x"></i>
-                                           
-                                        </div> 
-                                    </div>
-                                </div>
-                              
-                                
-                            </div>
-                            <div class="big-card">
-                                <div class="img-box">
-                                    <img src="./img/calcu.png" alt="Calculadora">
-                                </div>
-                                <div class="info-project">
-                                    <h3>Calculadora</h3>
-                                    <div class="info" id="info3">
-                                        <p>Calculadora Web feita com <b>Html, Css, Java script</b></p>
-                                    </div>
-                                    <div class="button-box">
-                                        <a href="https://github.com/devGusta2/calculator" target="_blank">
-                                            <i class="fa-brands fa-github fa-2x"></i>
-                                            <h5>Github</h5>
-                                        </a>
-                                        <a href="https://devgusta2.github.io/calculator/" target="_blank">
-                                            <i class="fa-solid fa-up-right-from-square fa-2x"></i>
-                                            <h5>Acessar</h5>
-                                        </a>
-                                        <div class="info-button"href="" target="_blank" onclick="exbModal(3)">
-                                            <i class="fa-solid fa-circle-info fa-2x"></i>
-                                      
-                                        </div> 
-                                    </div>
-                                </div>
-                              
-                            </div>
-                          
-                            
-                        </div>
-                    </section>
-
-
-
-
-
-       
-                <section class="about">
-                    
-                 
-                    <div class="columnAbout">
-                        <div class="titleAbout">
-                            <h1>Gustavo Rodrigues</h1>
-                        </div>
-                  
-                        <div class="textBox">
-                            <span>
-                                Olá, tenho 20 anos sou um curioso iniciante desenvolvedor web full stack, com uma formação em Desenvolvimento de Sistemas
-                                
-                                Meu objetivo é aprender, adaptar e crescer na área. Curso <b>Análise e Desenvolvimento de Sistemas</b>
-                                na Fatec. Principais tecnologias: <b>React Native, PHP, Html, css, JavaScript.</b>
-                            </span>
-                        </div>
-                        <!-- icones  -->
-                        <div class="iconsBox">
-                            <div class="imgTittle">
-                                <a href="./media/CurriculoWord.pdf" target="_blank"><img id="icon-paper" src="./img/paper-icon.png" alt="icon-paper"></a>
-                                <a href="./media/CurriculoWord.pdf" target="_blank"><h3>Currículo</h3></a>
-                            </div>
-            
-                        </div>
-                    </div>
-                    <div class="columnAbout"  id="section3">
-                        <div class="imgBox">
-                            <img src="./img/me.png" alt="icon-user">
-                        </div>
-                    </div>
-                </section>
-            </main>
+    <section class="section section--soft" id="sobre">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Sobre</p>
+          <h2>Foco em Java, Spring Boot e soluções que sustentam produto de verdade.</h2>
+          <p>
+            Sou Desenvolvedor Backend com foco em Java e Spring Boot, atuando no desenvolvimento de aplicações para a Prefeitura Municipal de Ferraz de Vasconcelos.
+            Tenho experiência com APIs REST, JWT, Spring Security, JPA/Hibernate, MySQL, testes automatizados e integração contínua.
+          </p>
         </div>
-        <script src="./script/javascript.js"></script>
-        <script src="https://kit.fontawesome.com/787aeba2d2.js" crossorigin="anonymous"></script>
-    </body>
 
+        <div class="about-grid">
+          <article class="glass-card about-card reveal">
+            <h3>O que eu entrego</h3>
+            <p>
+              Estruturo backends com atenção a segurança, organização e evolução sustentável.
+              Gosto de criar soluções que possam crescer sem virar um sistema difícil de manter.
+            </p>
+            <ul class="check-list">
+              <li>APIs REST bem definidas</li>
+              <li>Autenticação e autorização com JWT e RBAC</li>
+              <li>Persistência com JPA/Hibernate e SQL</li>
+              <li>Testes automatizados e validação de regras de negócio</li>
+            </ul>
+          </article>
+
+          <article class="glass-card about-card about-card--image reveal">
+            <img class="reveal-image" src="./img/eu2026.png" alt="Foto de Gustavo Rodrigues de Souza" loading="eager" decoding="async" width="640" height="640">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Experiência profissional</p>
+          <h2>Atuação prática em sistemas públicos e evolução contínua de produto.</h2>
+        </div>
+
+        <article class="glass-card experience-card reveal">
+          <div class="experience-header">
+            <div>
+              <p class="experience-company">Prefeitura Municipal de Ferraz de Vasconcelos</p>
+              <h3>Desenvolvedor Full Stack</h3>
+            </div>
+            <span class="experience-badge">Atual</span>
+          </div>
+
+          <p class="experience-text">
+            Responsável por desenvolvimento e manutenção de funcionalidades em sistemas internos, com forte atuação em backend Java,
+            integrações seguras e entregas contínuas.
+          </p>
+
+          <div class="experience-columns">
+            <div>
+              <h4>Principais atividades</h4>
+              <ul class="bullet-list">
+                <li>Desenvolvimento de APIs REST</li>
+                <li>Implementação de novas funcionalidades</li>
+                <li>Autenticação JWT e Spring Security</li>
+                <li>Controle de acesso RBAC e criptografia AES</li>
+                <li>Testes automatizados com JUnit 5 e Mockito</li>
+                <li>GitHub Actions, modelagem de banco e correção de bugs</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Entregas recorrentes</h4>
+              <ul class="bullet-list">
+                <li>Evolução de fluxos internos com menor acoplamento</li>
+                <li>Manutenção da consistência entre backend e frontend</li>
+                <li>Melhoria de regras de negócio e validações</li>
+                <li>Suporte à análise de requisitos e refinamento técnico</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="stack">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Stack</p>
+          <h2>Organizada por categoria para refletir o que eu uso hoje no dia a dia.</h2>
+        </div>
+
+        <div class="stack-grid">
+          <article class="glass-card stack-card reveal">
+            <div class="stack-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div>
+            <h3>Backend</h3>
+            <ul class="chip-list">
+              <li>Java 17+</li>
+              <li>Spring Boot</li>
+              <li>Spring Security</li>
+              <li>Spring Data JPA</li>
+              <li>Hibernate</li>
+              <li>APIs REST</li>
+              <li>Maven</li>
+            </ul>
+          </article>
+
+          <article class="glass-card stack-card reveal">
+            <div class="stack-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+            <h3>Banco de dados</h3>
+            <ul class="chip-list">
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>SQL</li>
+              <li>Modelagem relacional</li>
+            </ul>
+          </article>
+
+          <article class="glass-card stack-card reveal">
+            <div class="stack-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+            <h3>Segurança</h3>
+            <ul class="chip-list">
+              <li>JWT</li>
+              <li>RBAC</li>
+              <li>MFA</li>
+              <li>Criptografia AES</li>
+            </ul>
+          </article>
+
+          <article class="glass-card stack-card reveal">
+            <div class="stack-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+            <h3>Frontend</h3>
+            <ul class="chip-list">
+              <li>React</li>
+              <li>React Native</li>
+              <li>TypeScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="glass-card stack-card reveal">
+            <div class="stack-icon"><i class="fa-solid fa-vial" aria-hidden="true"></i></div>
+            <h3>Testes</h3>
+            <ul class="chip-list">
+              <li>JUnit 5</li>
+              <li>Mockito</li>
+            </ul>
+          </article>
+
+          <article class="glass-card stack-card reveal">
+            <div class="stack-icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
+            <h3>DevOps</h3>
+            <ul class="chip-list">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>GitHub Actions</li>
+              <li>CI/CD</li>
+            </ul>
+          </article>
+
+          <article class="glass-card stack-card reveal">
+            <div class="stack-icon"><i class="fa-solid fa-envelopes-bulk" aria-hidden="true"></i></div>
+            <h3>Mensageria</h3>
+            <ul class="chip-list">
+              <li>RabbitMQ</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Projetos</p>
+          <h2>Projetos selecionados com foco em impacto, stack atual e evolução técnica.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="glass-card project-card project-card--featured reveal">
+            <div class="project-media">
+              <img class="reveal-image" src="./img/gestao-educa-ferraz.svg" alt="Projeto Gestão Educa Ferraz" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <h3>Gestão Educa Ferraz</h3>
+                <span class="project-tag">Projeto principal</span>
+              </div>
+              <p>
+                Sistema completo de gestão escolar desenvolvido para a Prefeitura Municipal de Ferraz de Vasconcelos, com foco em escalabilidade,
+                segurança e operação contínua.
+              </p>
+              <ul class="chip-list">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>Spring Security</li>
+                <li>React</li>
+                <li>React Native</li>
+                <li>MySQL</li>
+                <li>JWT</li>
+                <li>GitHub Actions</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-secondary" href="https://github.com/devGusta2" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card project-card reveal">
+            <div class="project-media">
+              <img class="reveal-image" src="./img/Mentec.png" alt="Projeto Mentec" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <h3>Mentec</h3>
+                <span class="project-tag">FETEPS</span>
+              </div>
+              <p>
+                Sistema de mentorias desenvolvido para apresentação na FETEPS, pensado para aproximar alunos e tutores de forma simples e objetiva.
+              </p>
+              <ul class="chip-list">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>React</li>
+                <li>MySQL</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-secondary" href="https://github.com/devGusta2/Mentec" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn btn-primary" href="https://mentec-devgusta2s-projects.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card project-card reveal">
+            <div class="project-media">
+              <img class="reveal-image" src="./img/Logo-devGusta.png" alt="Portfólio profissional de Gustavo Rodrigues de Souza" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <h3>Portfólio profissional</h3>
+                <span class="project-tag">Este site</span>
+              </div>
+              <p>
+                Portfólio pessoal com foco em clareza visual, apresentação profissional e organização de conteúdo para destacar trajetória, stack e projetos.
+              </p>
+              <ul class="chip-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Acessibilidade</li>
+                <li>SEO</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-secondary" href="https://github.com/devGusta2/Portifolio" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="contato">
+      <div class="container">
+        <div class="contact-panel glass-card reveal">
+          <div class="section-heading section-heading--compact">
+            <p class="section-kicker">Contato</p>
+            <h2>Se quiser trocar uma ideia sobre backend Java, estou por aqui.</h2>
+            <p>
+              Tenho preferência por projetos com desafios técnicos reais, arquitetura bem definida e espaço para evoluir qualidade de software.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/gustavo-rodrigues-de-souza-80a064252/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn btn-secondary" href="https://github.com/devGusta2" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn btn-secondary" href="./media/Curriculo_Gustavo_Defintiv.pdf" target="_blank" rel="noreferrer">Currículo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Gustavo Rodrigues de Souza. Desenvolvedor Backend Java.</p>
+      <a href="#topo">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="./script/script.js"></script>
+  <script src="https://kit.fontawesome.com/787aeba2d2.js" crossorigin="anonymous"></script>
+</body>
 </html>

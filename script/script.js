@@ -1,97 +1,118 @@
-//Funcionamento do mostrador dos anos
-year=2022;
-document.getElementById('yearValue').innerHTML=year;
-//0%
-//100%
-//195%
+const body = document.body;
+const nav = document.querySelector("[data-nav]");
+const navToggle = document.querySelector("[data-nav-toggle]");
+const themeToggle = document.querySelector("[data-theme-toggle]");
+const themeIcon = themeToggle?.querySelector("i");
+const yearNode = document.querySelector("#year");
 
-setInterval(()=>{
-    if (year==2019){
-        document.getElementById('line1').style.width='0%';
-        document.getElementById('line2').style.width='0%';
-        //bolinhas
-        document.getElementById('ball1').style.opacity='1';
-        document.getElementById('ball2').style.opacity='0';
-        document.getElementById('ball3').style.opacity='0';
-        //titulos
-        document.getElementById('y2').style.opacity='0';
-        document.getElementById('y3').style.opacity='0';
-        //conjutos
-        document.getElementById('cntj1').style.marginLeft='0%';
-        //text
-        document.querySelector('.titleInfo').innerHTML='<h2>Curso básico de POO <br><br> Criação de jogos 2D</h2>';
-        document.querySelector('subInfo').innerHtml= document.querySelector('.subInfo').innerHTML="<h4>Plataforma: </h4><span>Fundação Bradesco</span>";
-   }else if(year==2022){
-        document.getElementById('line1').style.width='100%';
-        document.getElementById('line2').style.width='0%';
-        //bolinhas
-        document.getElementById('ball2').style.opacity='1';
-        document.getElementById('ball1').style.opacity='1';
-        document.getElementById('ball3').style.opacity='0';
-        //titulos
-        document.getElementById('y2').style.opacity='1';
-        document.getElementById('y3').style.opacity='0';
-        //conjunto
-        document.getElementById('cntj1').style.marginLeft='-100%';
-        //text  
-        document.querySelector('.titleInfo').innerHTML="<h2>Curso em Desenvolvimento<br> de Sistemas</h2>";
-        document.querySelector('subInfo').innerHtml= document.querySelector('.subInfo').innerHTML="<h4>Local:</h4><span>Etec de Guaianases</span><br><h4>Início:</h4><span>08/2022</span><br><h4>Conclusão:</h4><span>12/2023</span>";
-   }else if(year==2023){
-        document.getElementById('line1').style.width='100%';
-        document.getElementById('line2').style.width='100%';
-        //bolinhas
-        document.getElementById('ball2').style.opacity='1';
-        document.getElementById('ball3').style.opacity='1';
-        //titulos
-        document.getElementById('y2').style.opacity='1';
-        document.getElementById('y3').style.opacity='1';
-        document.getElementById('cntj1').style.marginLeft='-195%';
-
-        document.querySelector('.titleInfo').innerHTML="<h2>Curso em Desenvolvimento<br> de Sistemas</h2>";
-        document.querySelector('.subInfo').innerHTML="<h4>Local:</h4><span>Fatec Ferraz de Vasconcelos</span><br><h4>Início:</h4><span>08/2023</span><br><h4>Conclusão:</h4><span>12/2026</span>";
-   }
-}, 100);
-
-
-function rightArrow(){
- 
-   if(year==2019){
-        year=2022;
-        document.getElementById('yearValue').innerHTML=year;
-   }else if(year==2023){
-    //verifica se ja está no limite dos anos
-        year=2023;
-        document.getElementById('yearValue').innerHTML=year;
-    }else{
-        year++;
-        document.getElementById('yearValue').innerHTML=year;
-    }
+let storedTheme = null;
+try {
+  storedTheme = window.localStorage.getItem("portfolio-theme");
+} catch {
+  storedTheme = null;
 }
 
+const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)")?.matches ?? false;
 
-function leftArrow(){
-    //verifica se ja está no limite dos anos
-    if(year==2022){
-        year=2019;
-        document.getElementById('yearValue').innerHTML=year;
-    }else if(year==2019){
-        year=2019;
-        document.getElementById('yearValue').innerHTML=year;
-    }else{
-        year--;
-        document.getElementById('yearValue').innerHTML=year;
-    }
+const setTheme = (theme) => {
+  body.dataset.theme = theme;
+  try {
+    window.localStorage.setItem("portfolio-theme", theme);
+  } catch {
+    // Ignore storage failures in restricted browsing modes.
+  }
+
+  if (!themeToggle || !themeIcon) {
+    return;
+  }
+
+  const darkMode = theme === "dark";
+  themeIcon.classList.toggle("fa-moon", !darkMode);
+  themeIcon.classList.toggle("fa-sun", darkMode);
+  themeToggle.setAttribute("aria-label", darkMode ? "Ativar tema claro" : "Ativar tema escuro");
+};
+
+const setMenuOpen = (open) => {
+  body.classList.toggle("nav-open", open);
+
+  if (navToggle) {
+    navToggle.setAttribute("aria-expanded", String(open));
+  }
+};
+
+const toggleMenu = () => {
+  setMenuOpen(!body.classList.contains("nav-open"));
+};
+
+if (yearNode) {
+  yearNode.textContent = String(new Date().getFullYear());
 }
-//infos
 
-let info=[
-    ['Curso em Análise e desenvolvimento de sistemas',  'Course in Systems Analysis and Development',],
-    ['Local:',  'Place:'],
-    ['Fatec Ferraz de Vasconcelos',  'Fatec Ferraz de Vasconcelos'],
-    ['Início:',  'beginning:'],
-    ['08/2023',  '08/2023'],
-    ['Conclusão:',  'Conclusion:'],
-    ['08/2026',  '08/2026'],
-];
+setTheme(storedTheme ?? (prefersDark ? "dark" : "light"));
 
-//modal
+navToggle?.addEventListener("click", toggleMenu);
+themeToggle?.addEventListener("click", () => {
+  const nextTheme = body.dataset.theme === "dark" ? "light" : "dark";
+  setTheme(nextTheme);
+});
+
+nav?.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => setMenuOpen(false));
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    setMenuOpen(false);
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (!body.classList.contains("nav-open")) {
+    return;
+  }
+
+  const target = event.target;
+  if (!(target instanceof Node)) {
+    return;
+  }
+
+  if (nav?.contains(target) || navToggle?.contains(target)) {
+    return;
+  }
+
+  setMenuOpen(false);
+});
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.14 }
+  );
+
+  document.querySelectorAll(".reveal").forEach((element) => {
+    observer.observe(element);
+  });
+} else {
+  document.querySelectorAll(".reveal").forEach((element) => {
+    element.classList.add("is-visible");
+  });
+}
+
+document.querySelectorAll(".reveal-image").forEach((image) => {
+  const markLoaded = () => image.classList.add("is-loaded");
+
+  if (image.complete) {
+    markLoaded();
+    return;
+  }
+
+  image.addEventListener("load", markLoaded, { once: true });
+  image.addEventListener("error", markLoaded, { once: true });
+});
