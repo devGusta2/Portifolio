@@ -7,6 +7,17 @@
   <meta name="keywords" content="Gustavo Rodrigues de Souza, backend Java, Spring Boot, APIs REST, MySQL, PostgreSQL, Spring Security, portfólio">
   <meta name="author" content="Gustavo Rodrigues de Souza">
   <meta name="theme-color" content="#27374D">
+  <script>
+    (function () {
+      if (location.protocol === 'file:') return;
+
+      var segments = location.pathname.split('/').filter(Boolean);
+      if (!segments.length) return;
+
+      var baseHref = '/' + segments[0] + '/';
+      document.head.insertAdjacentHTML('afterbegin', '<base href="' + baseHref + '">');
+    })();
+  </script>
   <meta property="og:type" content="website">
   <meta property="og:title" content="Gustavo Rodrigues de Souza | Desenvolvedor Backend Java">
   <meta property="og:description" content="Portfólio profissional com foco em Java, Spring Boot, APIs REST, SQL, testes automatizados e CI/CD.">
@@ -291,7 +302,7 @@
         </div>
 
         <div class="projects-grid">
-          <article class="glass-card project-card project-card--featured reveal">
+          <!-- <article class="glass-card project-card project-card--featured reveal">
             <div class="project-media">
               <img class="reveal-image" src="./img/gestao-educa-ferraz.svg" alt="Projeto Gestão Educa Ferraz" loading="lazy" decoding="async">
             </div>
@@ -318,7 +329,7 @@
                 <a class="btn btn-secondary" href="https://github.com/devGusta2" target="_blank" rel="noreferrer">GitHub</a>
               </div>
             </div>
-          </article>
+          </article> -->
 
           <article class="glass-card project-card reveal">
             <div class="project-media">
